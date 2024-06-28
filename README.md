@@ -7,3 +7,4 @@ step 1 is mostly made of bootstrap it has three cards and a button
 step 2 has an input section with an image 
 step 3 has a form with overflow features and dynamic updation to the card.
 review and suggest
+website link: https://puffy-office.surge.sh/
