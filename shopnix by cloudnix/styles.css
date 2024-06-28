@@ -1,0 +1,484 @@
+/* styles.css  for navbar*/
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.nav-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    padding: 10px 20px;
+    margin: 40px 100px 40px 100px;
+    border-radius: 7px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.nav-logo {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #007bff;
+    border-radius: 7px;
+    color: white;
+    border: 1px solid black;
+    transition: border 0.3s, border-radius 0.3s;
+}
+
+.nav-login {
+    background-color: black;
+    padding: 10px 15px;
+    border-radius: 7px; 
+    color: #ffffff;
+}
+.nav-login {
+    
+}
+
+
+
+.nav-toggle {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-close {
+    display: none;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #007bff;
+        width: 100%;
+        border-radius: 7px;
+        padding: 10px;
+    }
+
+    .nav-links.show {
+        display: flex;
+      
+    }
+
+    .nav-toggle {
+        display: block;
+        
+    }
+
+    .nav-close.show {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+
+    .nav-navbar {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0px 0px 400px 0px;
+
+    }
+
+    .nav-logo {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-navbar {
+        margin: 20px 40px 100px 40px;
+        padding: 10px 10px;
+    }
+
+    .nav-logo {
+        font-size: 24px;
+    }
+
+    .nav-link {
+        padding: 10px 0;
+    }
+}
+
+/* step1 css styles */
+
+.themeHeading {
+    margin: 40px 0 20px; 
+}
+
+.btn-custom {
+    color: #000000;
+    border-color: #4d94ff;
+}
+
+.btn-custom:hover {
+    background-color: #2668ff;
+    border-color: #2668ff;
+    color: #ffffff;
+    padding: 4px 20px; /* Adjusted padding for smoother hover effect */
+    transition: background-color 0.5s, border-color 0.5s, color 0.5s, padding 0.5s;
+}
+
+.btn-next:hover {
+    color: #000000;
+    background-color: #ffffff;
+    padding: 6px 30px;
+    transition: background-color 0.5s, border-color 0.5s, color 0.5s, padding 0.5s;
+}
+
+/* step2    css    styles */
+
+
+
+.container {
+    margin: 80px; /* Adjusted top margin for overall content */
+}
+
+.content-wrapper {
+    display: flex;
+    width:fit-content; 
+
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.side-image {
+    flex-basis: 30%;
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-image img {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+}
+
+.form-container {
+    flex-basis: 70%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-container label {
+    font-weight: bold;
+}
+
+.form-container input {
+    padding: 10px;
+    border: 1px solid #2668ff;
+    border-radius: 4px;
+}
+
+.button-container {
+    display: flex;
+    justify-content:end;
+    margin-top: 20px;
+    
+}
+
+.back-button {
+    text-decoration: none;
+    background-color: #ffffff;
+    padding: 6px 50px 6px 50px;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #000;
+    margin: 0px 20px 0px 10px;
+}
+.back-button:hover{
+    color:white;
+    background-color: black;
+    transition: background-color 0.4s, color 0.4s;
+    border: none;
+    border: 1px solid black;
+}
+
+.next-button {
+    background-color: #007bff;
+    padding: 6px 50px 6px 50px;
+    color: #fff;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0px 20px 0px 10px;
+}
+.next-button:hover{
+    border-radius: 2px black;
+    color:rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    transition: background-color 0.4s, color 0.4s;
+    border: 1px solid #007bff;
+}
+input{
+    color: grey;
+    transition: 0.4s;
+    opacity: 50%;
+    
+}
+label{
+    font-size: 13px;
+}
+input:focus {
+    color: #000000;  /*  helps to make input attratively      */
+    opacity: 75%;
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+      flex-direction: column;  
+       }
+  
+    .side-image {
+      flex-basis: 100%; 
+    }
+  
+    .form-container {
+      flex-basis: 100%; 
+    }
+  
+    .button-container {
+      flex-direction: column; 
+      align-items: center; 
+    }
+  
+    .next-button {
+      margin-top: 10px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .form-container {
+      padding: 10px; /* Further reduce padding for smaller screens */
+    }
+  }
+
+
+  /* step3 css styles */
+
+
+
+  
+  .product-wrapper {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    margin: 40px 80px;
+}
+
+.product-form-section {
+    width: 50%;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.product-form-container {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-form-container h2 {
+    margin-top: 20px;
+}
+
+.product-form-container input,
+.product-form-container textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.product-form-container input[type="checkbox"] {
+    width: auto;
+    margin: 0 10px 0 0;
+}
+
+.product-preview-section {
+    width: 25%;
+    padding: 20px;
+    margin: 10px 10px 10px 16%;
+    background: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px solid black;
+}
+
+.product-preview-text {
+    color: grey;
+}
+
+.product-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-card h2 {
+    margin: 10px 0;
+}
+
+.product-card p {
+    margin: 10px 0;
+}
+
+.product-price-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.product-form-content input,
+.product-form-content textarea {
+    padding: 10px;
+    border: 1px solid #2668ff;
+    border-radius: 4px;
+}
+
+#product-next-button {
+    background-color: #007bff;
+    color: white;
+    padding: 11px 30px 10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#product-next-button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #007bff;
+    transition: color 0.4s, background-color 0.4s, border 0.4s;
+}
+
+#product-back-button {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 11px 30px 10px 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#product-back-button:hover {
+    background-color: black;
+    color: #ffffff;
+    border: 1px solid black;
+    transition: color 0.4s, background-color 0.4s;
+}
+
+#product-preview-net-price {
+    text-decoration: line-through;
+}
+
+@media (max-width: 1024px) {
+    .product-wrapper {
+        flex-direction: column;
+        margin: 20px 40px;
+    }
+
+    .product-form-section,
+    .product-preview-section {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .product-card {
+        width: 50%;
+    }
+
+    .product-price-boxes {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-form-section,
+    .product-preview-section {
+        padding: 15px;
+    }
+
+    .product-form-container,
+    .product-card {
+        padding: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* 
+to display each step */
+
+.hidden {
+    display: none;
+}
